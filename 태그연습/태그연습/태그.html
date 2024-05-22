@@ -9,9 +9,24 @@
   div {
     color :green;
   }
-
+  /* class는 중복가능 */
+  /* class를 사용할때는 .을 붙혀준다 */
   .text-blue { 
     color :blue;
+  }
+  /* id를 사용시 앞에 #을 붙여준다 */
+  /* 중복안됨 무조건 하나만 */
+  /* css 스타일링 할때는 id보다는 class로 사용 */
+  /* white는 #fff */
+  #bg-blue {
+    background-color: blue;
+    color:#fff;
+  }
+  .text-red {
+    color :red;
+  }
+  #text-green {
+    color :green;
   }
 </style>
 
@@ -26,14 +41,17 @@
   </div>
   <div class="text-blue"> 파란글씨어때</div>
   <!-- 글 본문 작성할 때 많이 사용하는 태그 -->
-  <p>paragraph의 약자
-  </p>
+  <p class="text-red" id="text-green">paragraph의 약자</p>
+  <P>Lorem ipsum dolor sit.</P>
+  <P class="text-red">Lorem ipsum dolor sit.</P>
+  <P>Lorem ipsum dolor sit.</P>
+ 
   <!-- heading tag
      h1~3까지 많이사용
      사이트에서 중요한 제목등을 작성할 때 작성
   -->
 
-  <h1>안녕하세요</h1>
+  <h1 id="bg-blue">안녕하세요</h1>
   <h2>안녕하세요</h2>
   <h3>안녕하세요</h3>
   <h4>안녕하세요</h4>
