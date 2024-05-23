@@ -6,10 +6,21 @@ body {
   background-color :beige;
 }
 .list a {
+  color :green;
   font-size: 20px;
   font-weight: bold;
 }
 .box {
   height: 1000px;
-  
 }
+.line-red {
+  border : 5px solid red
+  }
+.line-blue {
+  border : 5px solid blue
+  }
+.line-yellow {
+  border : 5px solid yellow
+  }
+    
+    
