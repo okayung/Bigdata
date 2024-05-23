@@ -1,0 +1,15 @@
+a {
+  color :#000;
+  text-decoration: none;
+}
+body {
+  background-color :beige;
+}
+.list a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.box {
+  height: 1000px;
+  
+}
