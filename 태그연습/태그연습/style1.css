@@ -20,15 +20,21 @@ body {
 }
 
 .line-red {
-  border : 5px solid red
+  border : 5px solid red;
+  padding: 50px;  
   }
 
 .line-blue {
-  border : 5px solid blue
+  border : 5px solid blue;
+  width: 1000px;
+  margin: 0 auto; 
   }
 
 .line-yellow {
-  border : 5px solid yellow
+  padding: 50px;
+  margin: 50px;
+  border : 5px solid yellow;
+
   }
     
     
