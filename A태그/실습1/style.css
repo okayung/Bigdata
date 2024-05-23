@@ -1,0 +1,16 @@
+a {
+  color:#000;
+}
+
+body {
+  background-color:antiquewhite;
+
+}
+.box {
+  height: 500px;
+  margin: 0 auto; 
+}
+.line-blue {
+  border : 5px solid blue;
+  margin: 0 auto; 
+}
