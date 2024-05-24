@@ -1,0 +1,23 @@
+a{
+
+}
+
+body {
+  background-color: #000;
+}
+
+.google {
+  width: 500px;
+  margin:100px auto 0 auto;
+  text-align: center;
+}
+
+.open-google {
+  padding: 20px 0;
+  border-radius: 20px;
+  background-color: #fff;
+
+}
+.open-google span {
+  font-weight: 700;
+}
