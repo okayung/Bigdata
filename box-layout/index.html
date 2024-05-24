@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>박스 배치하기</h1>
+
+  <div class="left">
+    <div>
+      <h2>1. 왼쪽으로 정렬</h2>
+      <h3>1.1 float으로 왼쪽 정렬</h3>
+      <p>
+        block박스들에게 float:left를 주되
+        float 속성을 적용한 부모 다음 요소에 
+        clear로 플로팅 효과를 지워줘야 한다
+      </p>
+      <div class="box left-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+
+    <div class="clear">
+      <h3>1.2 inline-block으로 왼쪽정렬</h3>
+      <p>
+        inline-block은 block요소처럼
+        width, height 지정가능
+      </p>
+      <div class="box left-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    <div>
+      <h3>1.3 flex로 왼쪽 정렬</h3>
+      <p>정렬하고 싶은 요소들 부모요소에게
+        display : flex; 를 준다
+      </p>
+      <div class="box left-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+
+    </div>
+    </div>
+  </div>
+  <div class="right"></div>
+    <h2>2. 오른쪽으로 정렬</h2>
+    <div>
+      <h3>2.1 float으로 오른쪽 정렬</h3>
+      <p>float right 정렬시 먼저 1,2,3박스 div를 왼쪽으로 옮긴 후
+        부모 박스를 float: right로 정렬한다
+      </p>
+      <div class="box right-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <div class="clear"></div>
+      <h3>2.2 inline-block으로 오른쪽 정렬</h3>
+      <p>
+        1.inline-block으로 수평정렬<br>
+        2.부모요소에게 text-aling으로 오른쪽 정렬<br>
+        3.본인에게 text-aling 으로 왼쪽 숫자 1 2 3 정렬
+      </p>
+      <div class="box right-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+           
+      </div>
+      <h3>2.3 flex로 오른쪽으로 정렬</h3>
+      <p>
+        1.정렬하고픈 요소 부모에게 display:flex<br>
+        2.수평정렬속성 : justify-content:start, end, center 있음
+      </p>
+      <div class="box right-flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+  
+  </div>
+  <div class="center">
+    <div>
+      <h2>3. 가운데로 정렬</h2>
+      <h3>3.1 float으로 가운데 정렬</h3>
+      <p>1. float 에는 center 없으니 float:left;정렬<br>
+         2. 부모요소 자식 총 width값을 width:300px;로<br>
+         3. margin:0 auto; 가운데 정렬<br>
+         4. width 사이즈가 안 맞으면 box-sizing:border-box 확인수정
+
+      </p>
+      <div class="box center-float">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+    <div class="clear"></div>
+    <div>
+      <h3>3.2 inline-block으로 가운데 정렬</h3>
+      <p>
+        1.display:inline-block으로 수평<br>
+        2.정렬박스 부모에게 text-align 으로 가운데
+        3.자신에기 text-align:center로 1 2 3 왼쪽 정렬
+      </p>
+      <div class="box center-inline">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+    <h3>3.3 flex으로 가운데 정렬</h3>
+    <p>
+      1.정렬할 부모요소 display:flex; <br>
+      2.수평정렬속성 justify-content:center; 
+    </p>
+    <div class="box center-flex">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+  <div class="flex">
+    <h1>flex</h1>
+    <div class="box flex-box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <h1>flex2</h1>
+    <div class="box flex2-box">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+   </div>
+  </div>
+
+
+</body>
+</html>
