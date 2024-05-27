@@ -1,0 +1,32 @@
+a{
+  color:#000;
+}
+.wrapper {
+  width: 1200px;
+  font-size: 36px;
+  margin: 50px auto;
+
+}
+.header{
+  background-color: antiquewhite;
+  height:100px;
+
+}
+.left-box{
+  width: 200px;
+  height: 500px;
+  float: left;
+  background-color:cornflowerblue;
+}
+.right {
+  
+  float: left;
+  width: 1000px;
+  height: 500px;
+  background-color: coral;
+}
+.footer {
+  clear: both;
+  height: 100px;
+  background-color: lightgreen;
+}
