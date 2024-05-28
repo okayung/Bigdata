@@ -6,24 +6,22 @@ li {
   display: flex;
   justify-content:space-between;
   align-items: center;
-  padding: 30px auto;
-  border: 4px solid blue;
+  padding: 0 30px;
+  border: 4px solid 000;
+  background-color: #000;
 }
 .logo {
   width: 80px;
-
 }
 .logo img {
   width: 80px;
 }
 .meun-list {
   display: flex;
+  justify-content: end;
+  color:#fff;
+  margin: 20px 20px;
 
-}
-.box {
-  width:50px auto;
-  border: 4px solid green;
-  padding: 20px auto;
 }
 .back-img {
   height: 400px;
@@ -32,4 +30,22 @@ li {
   background-size: cover;
   background-position: center;
 }
-
+.title1 {
+  padding: 50px;
+  color: #fff;
+  text-align: center;
+}
+.title2 {
+  color: #fff;
+  text-align: center;
+}
+.box1{
+  padding: 50px;
+  margin: -50px auto;
+  width: 500px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
