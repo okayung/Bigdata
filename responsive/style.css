@@ -35,3 +35,47 @@ body {
   height: 200px;
  
 }
+
+
+@media screen and (max-width :1200px) {
+  .global-header,
+  .global-footer {
+    background-color: red;
+    padding: 20px 0;
+    font-size: 24px;
+  }
+  .back-img {
+    height: 400px;
+    background-image: url(./images/산정상\ 노을.png);
+
+  }
+
+}
+
+
+@media screen and (max-width :768px) {
+  .global-header,
+  .global-footer {
+    background-color: yellow;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+
+  .back-img {
+    height: 320px;
+    background-image: url(./images/흰배경.jfif);
+
+  }
+  .card-list {
+    flex-direction: column;
+    
+  }
+  .card-list div {
+    border: 1px solid blue;
+    width: 100%;
+    height: 160px;
+    margin: 12px 0;   
+  }
+  
+  
+}
