@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+}
+
+.global-header,
+.global-footer {
+  background-color: blue;
+  padding: 30px 0;
+  font-size: 36px;
+  color: #fff;
+}
+.back-img {
+  height: 500px;
+  background-image: url(./images/도시배경.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+.card-list {
+  display: flex;
+  width: 90%;
+  margin: 40px auto;
+  justify-content: space-between
+  
+}
+.card-list div {
+  border: 1px solid blue;
+  width: 30%;
+  height: 200px;
+ 
+}
