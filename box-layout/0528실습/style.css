@@ -41,3 +41,49 @@ a {
   text-decoration: underline;
 }
 
+.back-img{
+  background-image: url(../실습2/images/back.jpeg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.back-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  color:#fff;
+}
+
+.back-text p,
+.back-text button {
+  margin-top: 20px;
+}
+
+.back-text p{
+  font-size: 18px;
+}
+
+.back-text button {
+  padding: 12px;
+  border-radius: 10px;
+
+}
+.second-box {
+  background-color: #000;
+  border-radius: 20px;
+  margin: -65px auto 0 auto;
+  padding: 40px 36px;
+  width: 500px;
+  color:#fff;
+  text-align: center;
+}
+.second-box p {
+  margin-top: 24px;
+}
+
+
+
