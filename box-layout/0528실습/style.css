@@ -128,7 +128,7 @@ a {
 }
 
 
-@media screen and (max-width :768px) {
+@media screen and (max-width :1200px) {
   .card-list {
     flex-direction: column;
     align-items: center;
