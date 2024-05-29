@@ -1,0 +1,177 @@
+*{
+  margin: 0;
+  padding: 0;
+  }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.head {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+
+}
+.snoopy img {
+  width: 50px;
+}
+
+.menu-list {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.back-img{
+  background-image: url(./images/스누피배경.jpeg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.back-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 600px;
+  color: #fff;
+
+}
+.back-text p,
+.back-text button {
+  margin-top: 20px;
+}
+.back-text p{
+  font-size: 18px;
+}
+.back-text button {
+  padding: 12px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+.fix-box{
+  position: absolute;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 10px; 
+  width: 100px;
+  text-align: center;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.fix-box div {
+  padding: 5px 10px
+}
+.card-list{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+
+}
+.card-list div {
+  width: 300px;
+  margin: 0 20px;
+  padding: 50px 16px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: skyblue;
+
+}
+.card-list div p{
+  margin-top: 20px;
+}
+
+.scroll {
+  height: 150px;
+
+}
+.bg-box {
+
+  background-color: skyblue;
+  height: 600px;
+  position: relative;
+
+}
+.bg-box div img {
+  width: 200px;
+  height: 300px;
+
+}
+.bg-img1 {
+  padding: 30px 30px 30px 30px;
+  position:absolute;
+  top:50%;
+  left: 35%;
+  transform: translate(-60%, -50%);
+  width: 300px;
+  height: 338px;
+  background-color: #fff;
+  background-image: url(./images/pngegg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.bg-img2 {
+  padding: 30px 30px 30px 30px;
+  position:absolute;
+  top:50%;
+  left: 35%;
+  transform: translate(50%, -50%);
+  width: 300px;
+  height: 338px;
+  background-color: #fff;
+  background-image: url(./images/스누피2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.footer {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  color:#fff;
+}
+.footer-link {
+  display: flex;
+
+}
+.footer-link a {
+  padding: 0 12px;
+  color: #fff;
+}
+
+
+@media screen and (max-width :768px) {
+  .card-list{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  
+  }
+  .card-list div {
+    width: 300px;
+    margin: 0 20px;
+    padding: 50px 16px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: skyblue;
+  }
+}
