@@ -3,6 +3,78 @@
   font-weight: 400;
   font-style: normal;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+li{
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  border: none;
+}
 body {
   font-family: "Dongle", sans-serif;
 }
+.global-header {
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 40px;
+  align-items: center;
+}
+.logo img {
+  width: 60px;
+}
+.gnb-list {
+  display: flex; 
+}
+.gnb-list li {
+  margin-right: 20px;
+}
+/* 마지막 div 선택 */
+.gnb-list li:last-child {
+  margin-right: 0;
+}
+.gnb-list li a {
+  font-weight: 700;
+  transition: color 3s;
+}
+.gnb-list li a:hover {
+  color: blue;
+}
+.back-img {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url(../실습0529/images/스누피배경.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.back-img h2 {
+  font-size: 60px;
+}
+.back-img p {
+  margin-top: 20px;
+  width: 900px;
+  font-size: 30px;
+  text-align: center;
+}
+.popup-open-btn {
+  padding: 12px 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
