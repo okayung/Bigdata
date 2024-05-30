@@ -18,6 +18,7 @@ li{
 button {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 body {
   font-family: "Dongle", sans-serif;
@@ -75,7 +76,7 @@ body {
   background-color: #fff;
   border-radius: 8px;
   margin-top: 20px;
-  cursor: pointer;
+
 }
 .card-list {
   display: flex;
@@ -166,6 +167,36 @@ body {
 }
 .quick-menu ul li a {
   color: #000;
+}
+.popup {
+  display: none;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 12px;
+  align-items: center;
+  border: 2px solid #000;
+  
+}
+.popup.is-active {
+  display: block;
+}
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+
+}
+.popup-close-btn {
+  font-size: 35px;
+
+}
+.popup img {
+  width: 100%
+
 }
 
 
