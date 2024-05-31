@@ -1,0 +1,77 @@
+.do-hyeon-regular {
+  font-family: "Do Hyeon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  list-style: none;
+}
+.global-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 40px;
+  align-items: center;
+}
+.logo img {
+  width: 100px;
+}
+
+.gnb-list1 {
+  display: flex;
+}
+.gnb-list1 li {
+  margin-right: 20px;
+}
+.gnb-list1 li a {
+  font-weight: 700;
+  transition: color 300ms;
+}
+.gnb-list1 li a:hover {
+  color:blue;
+
+}
+.sidebar-open-btn {
+  display: flex;
+  justify-content: right;
+  width: 100%;
+  color: #000;
+}
+
+.back-img {
+  background-image: url(./image/back.jpeg);
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+.gnb-list2 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  border: 2px solid blue;
+
+
+}
+.gnb-list2 li {
+  margin-left: 30px;
+}
+.gnb-list2 li a {
+  font-weight: 700;
+  transition: color 300ms;
+  color: #fff;
+}
+.gnb-list2 li a:hover {
+  color:blue;
+}
+

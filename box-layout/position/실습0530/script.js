@@ -18,12 +18,23 @@ let sidebarCloseBtn = document.querySelector('.sidebar-close-btn');
 // 1.sidebaropenbar 을 클릭했을때
 //  sidebar 에 is-active 클래스 추가
 
+
 sidebarOpenBtn.addEventListener('click', function(){
   sidebar.classList.add('is-active')
 })
 sidebarCloseBtn.addEventListener('click', function(){
   sidebar.classList.remove('is-active')
 })
+function openSidebar(){
+  // 1. sidebar 라는 클래스에 is-active 클래스 추가
+  sidebar.classList.add('is-active');
+}
+function Closesidebar(){
+  sidebar.classList.remove('is-active');
+}
+sidebarOpenBtn.addEventListener('click', openSidebar);
+sidebarCloseBtn.addEventListener('click', Closesidebar);
+
 // 함수 소괄호 안 :매개변수
 function plus (unm1, unm2) {
   console.log(unm1 + unm2)
