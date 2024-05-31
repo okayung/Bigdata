@@ -18,18 +18,23 @@ li {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
-  padding: 12px 40px;
+  padding: 12px 30px;
   align-items: center;
+  
 }
 .logo img {
   width: 100px;
 }
 
 .gnb-list1 {
-  display: flex;
+display: flex
+
 }
 .gnb-list1 li {
   margin-right: 20px;
+}
+.gnb-list1 li:last-child {
+  margin-right: 0;
 }
 .gnb-list1 li a {
   font-weight: 700;
@@ -42,26 +47,26 @@ li {
 .sidebar-open-btn {
   display: flex;
   justify-content: right;
-  width: 100%;
+  width: 90%;
   color: #000;
 }
 
 .back-img {
   background-image: url(./image/back.jpeg);
-  height: 700px;
+  height: 800px;
   display: flex;
   justify-content: center;
   background-size: cover;
   background-position: center;
+  border-block-start: solid rgb(221, 169, 28);
+  
 }
 .gnb-list2 {
   width: 100%;
   display: flex;
   justify-content: left;
   text-align: center;
-  border: 2px solid blue;
-
-
+  margin-top: 20px;
 }
 .gnb-list2 li {
   margin-left: 30px;
@@ -74,4 +79,140 @@ li {
 .gnb-list2 li a:hover {
   color:blue;
 }
+.card-list1 {
+  display: flex;  
+  justify-content: space-between;
+  padding: 20px 12px;
 
+}
+.card-list1 img {
+  width: 90%;
+}
+.card-list1 div {
+  background-color: #fff;
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 10px 5px 5px #666;
+  margin: 20px;
+}
+.card-list1 div h2 {
+  margin: 20px 0 auto;
+}
+.card-list1 div p{
+  margin: 0 10px auto;
+  font-weight: 700;
+}
+.card-list2 {
+  display: flex;  
+  justify-content: space-between;
+  padding: 20px 12px;
+
+}
+.card-list2 img {
+  width: 90%;
+}
+.card-list2 div {
+  background-color: #fff;
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 10px 5px 5px #666;
+  margin: 20px;
+}
+.card-list2 div h2 {
+  margin: 20px 0 auto;
+}
+.card-list2 div p{
+  margin: 0 10px auto;
+  font-weight: 700;
+}
+.card-list3 {
+  display: flex;  
+  justify-content: space-between;
+  padding: 20px 12px;
+  border-block-end: solid rgb(221, 169, 28);
+
+}
+.card-list3 img {
+  width: 90%;
+}
+.card-list3 div {
+  background-color: #fff;
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 10px 5px 5px #666;
+  margin: 20px;
+}
+.card-list3 div h2 {
+  margin: 20px 0 auto;
+}
+.card-list3 div p{
+  margin: 0 10px auto;
+  font-weight: 700;
+}
+.back-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 60px;
+  width: 90%;
+}
+.back-logo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 70px;
+  margin: 20px 30px;
+
+}
+.back-logo div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  margin: 5px 30px;
+
+}
+.global-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+
+}
+.global-footer-list1 ul li{
+  margin: 10px 10px 15px 0;
+}
+.global-footer-list1 ul li a{
+  color: #fff;
+}
+.global-footer-list1 li a:hover {
+  color:yellow;
+}
+.global-footer-list2 ul li{
+  margin: 10px 10px 15px 0;
+}
+.global-footer-list2 ul li a{
+  color: #fff;
+}
+.global-footer-list2 li a:hover {
+  color:yellow;
+}
+.global-footer-logo {
+  display: flex;
+ }
+ .global-footer-logo ul {
+  display: flex;
+  justify-content: center;
+
+ }
+ .global-footer-logo li a {
+  padding: 20px 20px;
+  margin: 10px 10px;
+  width: 20px;
+  color: red;
+  background-color: #fff;
+  border-radius: 70px;
+  font-size: 18px;
+ }

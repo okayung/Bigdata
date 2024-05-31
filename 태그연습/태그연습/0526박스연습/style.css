@@ -1,0 +1,39 @@
+a {
+    color:#000;
+}
+body {
+
+}
+.box {
+    width: 500px;
+
+}
+.head {
+    float: left;
+    width: 500px;
+    height: 50px;
+    background: aqua;
+}
+.clear {
+    clear: both;
+}
+.left {
+    float: left;
+    width: 150px;
+    height: 200px;
+    box-sizing: border-box;
+    background-color: blue;
+}
+.right {
+    float: right;
+    width: 350px;
+    height: 200px;
+    background-color: blueviolet;
+
+}
+.footer {
+    float: left;
+    width: 500px;
+    height: 100px;
+    background-color: green;
+}
