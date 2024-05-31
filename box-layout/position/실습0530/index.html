@@ -29,7 +29,11 @@
         </a>
       </h1>
 
-      <ul class="gnb-list">
+      <div class="sidebar-open-btn sm-only">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="gnb-list sm-hidden">
         <li><a href="">menu1</a></li>
         <li><a href="">menu2</a></li>
         <li><a href="">menu3</a></li>
@@ -102,8 +106,21 @@
       </div>
       <img src="../실습0529/images/pngegg.png" alt="logo">
     </div>
+    <aside class="sidebar sm-only">
+      <aside class="is-active">
+        <div class="sidebar-close-btn">
+         <i class="fa-regular fa-circle-xmark"></i>
+        </div>
+      <ul>
+        <li><a href="">menu1</a></li>
+        <li><a href="">menu2</a></li>
+        <li><a href="">menu3</a></li>
+        <li><a href="">menu4</a></li>
+      </ul>
+      </aside>
+    </aside>
   </div>
 
-  <script src="../script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
