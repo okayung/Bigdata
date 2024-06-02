@@ -14,6 +14,9 @@ a {
 li {
   list-style: none;
 }
+body {
+  font-family: "Do Hyeon", sans-serif;
+}
 .global-header {
   background-color: #fff;
   display: flex;
@@ -24,6 +27,10 @@ li {
 }
 .logo img {
   width: 100px;
+}
+
+.sm-only {
+  display: none;
 }
 
 .gnb-list1 {
@@ -79,77 +86,24 @@ display: flex
 .gnb-list2 li a:hover {
   color:blue;
 }
-.card-list1 {
+.card-list {
   display: flex;  
-  justify-content: space-between;
-  padding: 20px 12px;
-
-}
-.card-list1 img {
-  width: 90%;
-}
-.card-list1 div {
-  background-color: #fff;
-  padding: 20px 12px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 10px 5px 5px #666;
-  margin: 20px;
-}
-.card-list1 div h2 {
-  margin: 20px 0 auto;
-}
-.card-list1 div p{
-  margin: 0 10px auto;
-  font-weight: 700;
-}
-.card-list2 {
-  display: flex;  
-  justify-content: space-between;
-  padding: 20px 12px;
-
-}
-.card-list2 img {
-  width: 90%;
-}
-.card-list2 div {
-  background-color: #fff;
-  padding: 20px 12px;
-  text-align: center;
-  border-radius: 12px;
-  box-shadow: 10px 5px 5px #666;
-  margin: 20px;
-}
-.card-list2 div h2 {
-  margin: 20px 0 auto;
-}
-.card-list2 div p{
-  margin: 0 10px auto;
-  font-weight: 700;
-}
-.card-list3 {
-  display: flex;  
-  justify-content: space-between;
-  padding: 20px 12px;
+  justify-content: center;
+  flex-wrap: wrap;
   border-block-end: solid rgb(221, 169, 28);
-
 }
-.card-list3 img {
+.card-list img {
   width: 90%;
 }
-.card-list3 div {
-  background-color: #fff;
+.card-list-burger {
   padding: 20px 12px;
+  width: 28%;
+  box-shadow: 5px 5px 5px #666;
   text-align: center;
-  border-radius: 12px;
-  box-shadow: 10px 5px 5px #666;
+  border-radius: 10px;
   margin: 20px;
 }
-.card-list3 div h2 {
-  margin: 20px 0 auto;
-}
-.card-list3 div p{
-  margin: 0 10px auto;
+.card-list-burger p {
   font-weight: 700;
 }
 .back-logo {
@@ -162,7 +116,7 @@ display: flex
 .back-logo img {
   width: 150px;
   height: 150px;
-  border-radius: 70px;
+  border-radius: 80px;
   margin: 20px 30px;
 
 }
@@ -181,38 +135,110 @@ display: flex
   background-color: red;
 
 }
-.global-footer-list1 ul li{
+.global-footer-list ul li{
   margin: 10px 10px 15px 0;
 }
-.global-footer-list1 ul li a{
+.global-footer-list ul li a{
   color: #fff;
 }
-.global-footer-list1 li a:hover {
+.global-footer li a:hover {
   color:yellow;
 }
-.global-footer-list2 ul li{
-  margin: 10px 10px 15px 0;
-}
-.global-footer-list2 ul li a{
-  color: #fff;
-}
-.global-footer-list2 li a:hover {
-  color:yellow;
+.global-footer-list {
+  margin-left: 20px;
 }
 .global-footer-logo {
   display: flex;
- }
+}
  .global-footer-logo ul {
   display: flex;
   justify-content: center;
 
+
  }
  .global-footer-logo li a {
-  padding: 20px 20px;
-  margin: 10px 10px;
-  width: 20px;
   color: red;
   background-color: #fff;
   border-radius: 70px;
-  font-size: 18px;
+  padding: 20px 20px;
+  margin: 10px 10px;
+  width: 20px;
+  font-size: 24px;
+
  }
+
+ .search{
+  background-color: gray;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-200%);
+}
+
+.search.is-active {
+  transform: translate(-50%, -50%);
+}
+
+.search-item {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.whitebox {
+  width: 900px;
+  height: 50px;
+  background-color: #fff;
+  color: gray;
+  border-radius: 50px;
+}
+
+.yellowbox {
+  margin-left: 50px;
+  width: 100px;
+  height: 50px;
+  background-color: yellow;
+  color: black;
+  border-radius: 50px;
+ 
+}
+
+.search-close-btn i {
+  text-align: center;
+  font-size: 30px;
+  background-color: yellow;
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  cursor: pointer;
+  }
+
+
+.sidebar {
+  background-color: #fff;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  font-size: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-350px)
+}
+
+.sidebar.is-active {
+  transform: translate(0)
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar-close-btn {
+  text-align: right;
+  font-size: 22px;
+  cursor: pointer; 
+}
