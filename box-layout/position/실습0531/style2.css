@@ -9,7 +9,7 @@
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 li  {
   list-style: none;
@@ -24,4 +24,148 @@ button {
 }
 body {
   font-family: "Do Hyeon", sans-serif;
+}
+.sm-only {
+  display: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+}
+.gnb-list {
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+}
+.logo img {
+  width: 60px;
+}
+.gnb-list li a {
+  font-weight: 700;
+  transition: color 300ms ease-in-out;
+}
+.gnb-list li a:hover {
+  color:rgb(235, 27, 27);
+}
+.search-btn{
+  cursor: pointer;
+}
+.lnb {
+  border-top: 2px solid rgb(225, 213, 23);
+  background-color: rgb(235, 27, 27);
+  position: sticky;
+  left: 0;
+  top:0;
+}
+.lnb-list {
+  display: flex;
+  padding: 20px 35px;
+}
+.lnb-list a {
+  padding-right: 12px;
+  color:#fff;
+}
+.back-img {
+  background-image: url(./image/back.jpeg);
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 40px auto;
+}
+.menu-item {
+  box-shadow: 5px 5px 5px #666;
+  border-radius: 12px;
+  overflow: hidden;
+  width: calc((100% - 60px) /3);
+  text-align: center;
+  margin: 12px 0;
+}
+.menu-item a {
+  transition: opacity 300ms ease-in-out;
+}
+.menu-item a:hover {
+  opacity: 0.5;
+}
+.menu-item img {
+  width: 100%;
+}
+.mac-story {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  border-top: 2px solid rgb(225, 213, 23);
+  background-color: #fff;
+  padding: 8px 0;
+}
+.mac-story-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+
+}
+.mac-story-list li img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+footer {
+  background-color: rgb(235, 27, 27);
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.footer-1 {
+ margin-right: 20px; 
+}
+.text-yellow a {
+  color: rgb(225, 213, 23);
+}
+footer ul li,
+footer ul li  a{
+  color: #fff;
+}
+.footer-info {
+  flex-grow: 1;
+
+}
+.footer-link {
+  display: flex;
+
+}
+.footer-link li {
+  position: relative;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  margin: 0 8px;
+  border-radius: 50%;
+  transition: background-color 300ms ease-in-out;
+}
+.footer-link li:hover {
+  background-color: rgb(235, 27, 27);
+}
+.footer-link li i {
+  position: absolute;
+  left: 50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: rgb(235, 27, 27);
+  transition: color 300ms ease-in-out;
+}
+.footer-link li i:hover {
+  color: #fff;
 }
