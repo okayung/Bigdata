@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>input태그연습|회원가입</title>
+  <link rel="stylesheet" href="./style.css">
+<!-- j-query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>회원가입</h1>
+    <p>회원가입 페이지입니다.</p>
+
+    <!-- <table border="1">
+      <tr>
+        <th>이름</th>
+        <td>이예진</td>
+      </tr>
+
+      <tr>
+        <td>성별</td>
+        <td>여성</td>
+      </tr>
+    </table> -->
+    <table>
+      <tr>
+        <td>ID</td>
+        <td>
+          <input type="text"> 
+        </td>
+      </tr>
+    </table>
+    <!-- action : 데이터가 전송될 서버 URL -->
+    <!-- method : 데이터를 전송하는 방식(http메소드)을 지정한다-->
+    <!-- 값이 비어있을 때 기본값 : GET -->
+    <form action="./action.html" method="GET">
+      <table>
+        <tr>
+          <td>ID</td>
+          <td>
+            <input type="text"> 
+          </td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>
+            <input type="password"> 
+          </td>
+        </tr>
+      </table>
+      <select class="year" name="" id="">
+
+        <!-- <option value="">1</option>
+        <option value="">2</option>
+        <option value="">3</option>
+        <option value="">4</option> -->
+      </select>
+      <span>남자<input type="radio" name="gender"></span>
+      <span>여자<input type="radio" name="gender"></span>
+      <input type="range">
+      <input type="color">
+      <input type="file">
+      <textarea name="" id=""></textarea>
+
+      <input type="submit">
+      <input type="reset">
+      
+      
+    </form>
+ 
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
