@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 4px solid #444;
+  padding: 20px 30px;
+}
+.mode-btn {
+  border: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 20px;
+  padding: 12px 20px; 
+}
+/* darkmode */
+header.dark {
+  color: #fff;
+  background-color: #333;
+
+}
+header.dark .mode-btn {
+  color: #333;
+  background-color: #fff;
+}
