@@ -4,21 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
+  <link rel="stylesheet" href="./회원가입.css">
 </head>
 <body>
   <div class="wrapper">
    <h1>회원가입</h1>
     <p>회원강비 페이지 입니다. 본사는 고객님들의 개인정보를 소중하고 안전하게 보관하고 있습니다.</p>
     <p>불편사항이 있으시면 042-1234-1234로 연락주시기 바랍니다.</p>
-    <table border="1">
-      <tr>
+    <table>
+      <tr class="check-id">
         <td>아이디</td>
-        <td><input type="text"></td>
-        <td><input type="file"></td>
+        <td><input type="text" placeholder="아이디를 입력하세요"> 
+          <button type="button" class="check-btn">아이디중복체크</button></td>
       </tr>
       <tr>
         <td>비밀번호</td>
-        <td><input type="text"></td>
+        <td><input type="password"></td>
       </tr>
       <tr>
         <td>이름</td>
@@ -30,7 +31,7 @@
       </tr>
       <tr>
         <td>국적</td>
-        <td><select name="" id="">
+        <td><select class="country" id="">
           <option value="">미국</option>
           <option value="">일본</option>
           <option value="">중국</option>
@@ -47,21 +48,63 @@
       </tr>
       <tr>
         <td>성별</td>
-        <td><input type="radio">남자
-       <input type="radio">여자</td>
+        <td><span><input type="radio" name="gender">남자</span>
+          <span><input type="radio" name="gender">여자</span></td>
       </tr>
       <tr>
         <td>전화번호</td>
-        <td><select name="" id="">
+        <td><select class="phone" id="">
           <option value="">010</option>
           <option value="">011</option>
+          <option value="">018</option>
           <option value="">070</option>
-          <option value="">017</option>
-        </select>-
-        <input type="text">-
-        <input type="text"></td>
+            </select>
+          - <input type="text">
+          - <input type="text"></td>
+      </tr>
+      <tr>
+        <td>희망연봉</td>
+        <td><input type="range"></td>
+      </tr>
+      <tr>
+        <td>취미</td>
+        <td>
+          <input type="checkbox">양궁
+          <input type="checkbox">등산
+          <input type="checkbox">영화
+          <input type="checkbox">독서
+          <input type="checkbox">낚시
+          <input type="checkbox">축구
+          <input type="checkbox">야구
+          <input type="checkbox">수영
+          <input type="checkbox">다도
+          <input type="checkbox">음악
+          <input type="checkbox">바둑
+          <input type="checkbox">악기
+        </td>
+      </tr>
+      <tr>
+        <td>증명사진</td>
+         <td>
+          <input type="file">
+         </td>
+      </tr>
+      <tr>
+        <td>자기소개서</td>
+        <td>
+          <textarea name="" id="" placeholder="400자 미만으로 작성하시오"></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit">
+        </td>
+        <td>
+          <input type="reset">
+        </td> 
       </tr>
     </table>
   </div>
+  <script src="./회원가입.js"></script>
 </body>
 </html>
