@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./회원가입답.css">
+  <!-- j-query -->
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.js" integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>회원가입</h1>
+    <p class="join-txt">회원가입 페이지 입니다. 본사는 고객님들의 개인정보를 소중하고 안전하게 보관하고 있습니다.<br>
+    불편사항이 있으시면 042-1234-1234로 연락주시기 바랍니다.</p>
+    <form action="./action.html" method="GET">
+      <table>
+        <tr>
+          <td>
+            <label for="userid">아이디</label>
+          </td>
+          <td>
+            <input id="userid" placeholder="아이디를 입력하세요">
+            <button type="button">아이디중복체크</button>
+            <p class="id-warn"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="userpw">비밀번호</label>
+          </td>
+          <td>
+            <input id="userpw" type="password">
+            <p class="pw-warn"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="user-pwchk">비밀번호재확인</label>
+          </td>
+          <td>
+            <input id="user-pwchk"  type="password">
+            <p class="pwchk-warn"></p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="username">이름</label>
+          </td>
+          <td>
+            <input id="username"  type="text">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="usermail">이메일</label>
+          </td>
+          <td>
+            <input id="usermail"  type="eamil">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="user-nation">국적</label>
+          </td>
+          <td>
+            <select name="nation" id="user-nation">
+              <optgroup label="Asia">
+                <option value="kor">대한민국</option>
+                <option value="jap">일본</option>
+                <option value="chi">중국</option>
+                <option value="" disabled="">북한</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>생년월일</td>
+          <td><span><select name="" id="year"></select>년</span>
+            <span><select name="" id="month"></select>월</span>
+           <span><select name="" id="date"></select>일</span>
+          </td>
+        </tr>
+        <tr>
+          <td>성별</td>
+          <td>
+            <label><input type="radio" name="gender" value="1">남자</label>
+            <label><input type="radio" name="gender" value="0">여자</label></td>
+        </tr>
+        <tr>
+          <td>전화번호</td>
+          <td>
+            <select class="phone" id="">
+              <option value="">010</option>
+              <option value="">011</option>
+              <option value="">018</option>
+              <option value="">070</option>
+            </select>
+              - <input type="text" maxlength="4">
+              - <input type="text" maxlength="4">
+          </td>
+        </tr>
+        <tr>
+          <td>희망연봉</td>
+          <td><input type="range"></td>
+        </tr>
+        <tr>
+          <td>취미</td>
+          <td>
+            <label><input checked type="checkbox" name="hobby">양궁</label>
+            <label><input type="checkbox" name="hobby">등산</label>
+            <label><input type="checkbox" name="hobby">영화</label>
+            <label><input type="checkbox" name="hobby">독서</label>
+            <label><input type="checkbox" name="hobby">낚시</label>
+            <label><input type="checkbox" name="hobby">축구</label>
+            <label><input type="checkbox" name="hobby">야구</label>
+            <label><input type="checkbox" name="hobby">수영</label>
+            <label><input type="checkbox" name="hobby">다도</label>
+            <label><input type="checkbox" name="hobby">음악</label>
+   
+          </td>
+        </tr>
+        <tr>
+          <td>증명사진</td>
+           <td>
+            <input type="file">
+           </td>
+        </tr>
+        <tr>
+          <td>자기소개서</td>
+          <td>
+            <textarea name="" id="" placeholder="400자 미만으로 작성하시오"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input id="submit-btn" type="submit">
+          </td>
+          <td>
+            <input type="reset">
+          </td> 
+        </tr>
+      </table>
+    </form>
+   
+  </div>
+  
+  <script src="./회원가입답.js"></script>
+</body>
+</html>
